@@ -1,7 +1,8 @@
 {
-    "headers": [
-      {
-        "source": "/api/(.*)",
+  "headers": [
+    {
+      "source": "/api/(.*)",
+        "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },
